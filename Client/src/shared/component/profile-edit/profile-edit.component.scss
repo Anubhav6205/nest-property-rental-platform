@@ -1,0 +1,63 @@
+.container{
+    font-family: 'Jost', sans-serif;
+}
+button{
+   
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:.8rem 0
+    
+}
+
+.prof-form{
+    display: flex;
+    .left{
+        width: 50%;
+        img{
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+    .right{
+        width: 50%;
+    }
+
+    input{
+        border: none;
+        outline: none;
+        border-radius: .2rem;
+        border-bottom: 1px solid grey;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 80%; /* Adjust the width as needed */
+        margin: 0 auto; /* Center the container */
+    }
+
+    button {
+        position: relative; /* Reset position for the button */
+    }
+
+    .left{display: none;}
+    .prof-form{
+        flex-direction: column;
+    }
+}
+
+
+.arrow{
+    padding:1rem;
+    transition: .2s ease-in-out;
+    &:hover{
+      color:#4636b116; 
+    }
+}
