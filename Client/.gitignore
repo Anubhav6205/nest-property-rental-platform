@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Compiled output and reports
+dist/
+*.map
+eslint-report.txt
+lint-report.json
+report.json

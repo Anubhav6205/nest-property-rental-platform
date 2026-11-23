@@ -369,7 +369,7 @@ export class DetailsComponent implements OnInit {
       currency: 'INR',
       amount: rent,
       name: this.userData.firstName + ' ' + this.userData.lastName,
-      key: 'REDACTED',
+      key: 'YOUR_GOOGLE_MAPS_API_KEY',
       image: 'https://avatars.githubusercontent.com/u/7713209?s=280&v=4',
       prefill: {
         name: 'Anubhav Gupta',
