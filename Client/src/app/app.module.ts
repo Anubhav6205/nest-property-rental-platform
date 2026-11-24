@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { DemoInterceptor } from 'src/shared/demo/demo.interceptor';
 
 import { GoogleMapsModule } from '@angular/google-maps';
 
@@ -126,7 +127,9 @@ import { PaymentSuccessComponent } from '../shared/component/payment-success/pay
 
     NgxParallaxModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: DemoInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

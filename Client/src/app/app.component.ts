@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from 'src/shared/component/login/login.component';
+import { DEMO_MODE } from 'src/shared/config';
 import { SignupComponent } from 'src/shared/component/signup/signup.component';
 
 @Component({
@@ -10,6 +11,7 @@ import { SignupComponent } from 'src/shared/component/signup/signup.component';
 })
 export class AppComponent {
   title = 'Client';
+  demoMode = DEMO_MODE;
 
   constructor(private dialog: MatDialog) {}
 

@@ -1,4 +1,9 @@
 <div class="app-container">
+<div *ngIf="demoMode" class="demo-banner">
+  Demo mode: sample listings only. The Spring Boot API and MongoDB are not hosted,
+  so login, booking, reviews and chat are disabled.
+  <a href="https://github.com/Anubhav6205/nest-property-rental-platform" target="_blank" rel="noopener">Source on GitHub</a>
+</div>
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 </div>

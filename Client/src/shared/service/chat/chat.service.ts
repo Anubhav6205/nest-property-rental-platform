@@ -1,3 +1,4 @@
+import { API_ORIGIN } from 'src/shared/config';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Chat } from 'src/shared/model/Chat';
@@ -6,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ChatService {
-  baseUrl: string = 'http://localhost:8888/chat';
+  baseUrl: string = `${API_ORIGIN}/chat`;
 
   constructor(private http:HttpClient) { }
 

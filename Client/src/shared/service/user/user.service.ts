@@ -1,3 +1,4 @@
+import { API_ORIGIN } from 'src/shared/config';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from 'src/shared/model/User';
@@ -10,7 +11,7 @@ import { Appointment } from 'src/shared/model/Appointment';
   providedIn: 'root',
 })
 export class UserService {
-  baseUrl: string = 'http://localhost:8888/user';
+  baseUrl: string = `${API_ORIGIN}/user`;
   userData: User={} as User;
   private userDataBS: BehaviorSubject<User>;
   userExists: boolean = false;

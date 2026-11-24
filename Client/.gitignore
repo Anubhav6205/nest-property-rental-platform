@@ -47,3 +47,4 @@ dist/
 eslint-report.txt
 lint-report.json
 report.json
+.vercel

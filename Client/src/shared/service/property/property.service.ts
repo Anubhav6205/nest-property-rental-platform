@@ -1,3 +1,4 @@
+import { API_ORIGIN } from 'src/shared/config';
 import { Injectable, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { PropertyDetails } from 'src/shared/model/Property/PropertyDetails';
@@ -21,7 +22,7 @@ export class PropertyService implements OnInit {
   propertyDetails: PropertyDetails = {} as PropertyDetails;
   propertyGallery: string[] = [];
   rentalDetails: RentalDetails = {} as RentalDetails;
-  baseUrl: string = 'http://localhost:8888/property';
+  baseUrl: string = `${API_ORIGIN}/property`;
 
   userData: User = {} as User;
 
